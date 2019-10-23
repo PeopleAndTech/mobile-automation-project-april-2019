@@ -8,10 +8,11 @@
     <artifactId>MobileAutomation</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>Generic</module>
         <module>com.td</module>
-        <module>com.musicplayer</module>
+        <module>com.uicatalog</module>
     </modules>
 
     <build>

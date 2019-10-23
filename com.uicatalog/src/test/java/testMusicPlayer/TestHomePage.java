@@ -17,6 +17,7 @@ public class TestHomePage extends MobileAPI {
 
     @Test
     public void uiTestCases() {
-        System.out.println("test");
+        homePage.clickAlert();
+        sleepFor(20);
     }
 }

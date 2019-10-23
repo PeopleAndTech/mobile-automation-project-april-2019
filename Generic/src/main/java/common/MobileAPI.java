@@ -79,12 +79,13 @@ public class MobileAPI {
             }
         } else {
             cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, version);
-            cap.setCapability(MobileCapabilityType.APP_PACKAGE, "com.tdbank");
+            cap.setCapability("bundleId", "com.example.apple-samplecode.UICatalog");
             cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
             cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
-            cap.setCapability(MobileCapabilityType.APP_PACKAGE, "com.tdbank");
+            cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Hisham’s iPhone");
+            cap.setCapability(MobileCapabilityType.UDID, "00008030-0016453A3ED8802E");
             if (appiumDriver == null) {
-                appiumDriver = new IOSDriver(new URL("http://" + appiumPort + "/wd/hub"), cap);
+                appiumDriver = new IOSDriver(new URL("http://localhost:4723/wd/hub"), cap);
             }
         }
         appiumDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
